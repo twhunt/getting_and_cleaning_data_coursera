@@ -53,7 +53,9 @@ run_analysis <- function() {
     }
   }
   
-  return(data.frame(summary_table))
+  # Code that actually does something useful would return the data in whatever format,
+  # and allow the caller to decide whether to convert it to text. Alas, coursera.
+  write.table(data.frame(summary_table), file="reduced_data.txt", row.names = FALSE)
 }
 
 ind2activitylabel <-function(index) {
