@@ -1,10 +1,10 @@
 run_analysis <- function() {
   
-  dataset_path <- "Dataset.zip"
-  download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",
-                dataset_path,
-                method = "curl")
-  unzip(dataset_path)
+  #dataset_path <- "Dataset.zip"
+  #download.file("https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip",
+  #              dataset_path,
+  #              method = "curl")
+  #unzip(dataset_path)
   
   # Read type of activity associated with a row of data.
   ACTIVITY_TYPE_NAME = "activity_type"
